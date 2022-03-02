@@ -6,38 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos</title>
     <link rel="shortcut icon" href="../images/Logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="grid">
     <header>
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="perfil.html">Perfil</a>
-            <a href="videos.html">Videos</a>
-            <a href="noticias.html">Noticias</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <img id="logo" src="../images/Logo.png" alt="Logo" width="48" height="48">
-        <h1>YouTube Covers</h1>
-    </header>
-    <main>
-        <section>
-            <a href="https://youtu.be/thP4TPJlpA4">
-                <img class="borde-redondo" src="../images/Homura - Lisa.png" alt="Video 1"><br>
-                Homura - Lisa
-            </a><br>
-            <a href="https://youtu.be/EvtRcimN4v4">
-                <img class="borde-redondo" src="../images/Dry Flower-Kakurenbo (Mashup) - Yuri.png" alt="Video 2"><br>
-                Dry Flower/Kakurenbo (Mashup) - Yuri
-            </a><br>
-            <a href="https://youtu.be/uBlDJ38Eq24">
-                <img class="borde-redondo" src="../images/The History of Everything - The Big Bang Theory.png" alt="Video 3"><br>
-                The History of Everything - The Big Bang Theory
+        <nav class="navbar nav-fill" style="background-color: #F0DDBC">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="../images/Logo.png" alt="Logo" width="48" height="48">
             </a>
-        </section>
+            <a class="nav-link link-dark" href="../index.html">Inicio</a>
+            <a class="nav-link link-dark" href="perfil.html">Perfil</a>
+            <a class="nav-link link-dark" href="videos.html">Videos</a>
+            <a class="nav-link link-dark" href="noticias.html">Noticias</a>
+            <a class="nav-link link-dark" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>YouTube Covers</h1>
+        <div class="row">
+            <div class="col-md-4 mt-3 mb-3">
+                <a href="https://youtu.be/thP4TPJlpA4">
+                    <img class="borde-redondo img-thumbnail" src="../images/Homura - Lisa.png" alt="Video 1"><br>
+                    Homura - Lisa
+                </a>
+            </div>
+            <div class="col-md-4 mt-3 mb-3">
+                <a href="https://youtu.be/EvtRcimN4v4">
+                    <img class="borde-redondo img-thumbnail" src="../images/Dry Flower-Kakurenbo (Mashup) - Yuri.png" alt="Video 2"><br>
+                    Dry Flower/Kakurenbo (Mashup) - Yuri
+                </a>
+            </div>
+            <div class="col-md-4 mt-3 mb-3">
+                <a href="https://youtu.be/uBlDJ38Eq24">
+                    <img class="borde-redondo img-thumbnail" src="../images/The History of Everything - The Big Bang Theory.png" alt="Video 3"><br>
+                    The History of Everything - The Big Bang Theory
+                </a>
+            </div>
+        </div>
     </main>
-    <footer>
+    <footer id="footer" class="navbar fixed-bottom">
         <a href="https://www.instagram.com/agusbiancomusic/"><img src="../images/instagram.png" width="32" height="32" alt="instagram"></a>
         <a href="https://www.facebook.com/agusbiancomusic"><img src="../images/facebook.png" width="32" height="32" alt="facebook"></a>
         <a href="https://twitter.com/agusbiancomusic"><img src="../images/twitter.png" width="32" height="32" alt="twitter"></a>
