@@ -1,0 +1,48 @@
+@import "_base";
+@import "_layout";
+
+#titulo {
+    padding-bottom: 20px;
+}
+#foto {
+    width: 75%;
+    height: auto;
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        height: 50px;
+        nav {
+            font-size: 12px;
+            a {
+                img {
+                    #logo {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }    
+            }
+        }
+    }
+    main {
+        font-size: 12px;
+        h1 {
+            font-size: 20px;
+            #titulo {
+                margin-top: 10%;
+            }
+        }
+    }
+    footer {
+        a {
+            padding: 2px;
+            img {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+
+
