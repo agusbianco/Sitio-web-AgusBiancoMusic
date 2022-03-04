@@ -9,13 +9,14 @@ body {
   margin: 0px;
   font-family: 'Kalam', cursive;
   line-height: 1.5; }
-  body .grid {
-    display: grid;
-    grid-template-rows: 10% 75% 5%;
-    grid-template-areas: "header" "main" "footer"; }
   body a {
     text-decoration: none;
     color: black; }
+
+.grid {
+  display: grid;
+  grid-template-rows: 10% 75% 5%;
+  grid-template-areas: "header" "main" "footer"; }
 
 header {
   display: block;
@@ -27,25 +28,26 @@ header {
   header nav {
     text-transform: uppercase;
     font-size: 30px; }
-    header nav .navbar {
-      flex-wrap: nowrap; }
-    header nav a .navbar-brand {
+    header nav .navbar-brand {
       padding-left: 10px;
       margin-right: 0%; }
+  header .navbar {
+    flex-wrap: nowrap; }
 
 main {
   display: block;
   text-align: center;
   font-size: 25px;
   grid-area: main; }
-  main .container {
-    margin-top: 2%;
-    margin-bottom: 5%; }
   main h1 {
     text-align: center;
     font-size: 35px; }
-  main img .borde-redondo {
+  main .borde-redondo {
     border-radius: 16px; }
+
+.container {
+  margin-top: 2%;
+  margin-bottom: 5%; }
 
 footer {
   display: block;
@@ -54,10 +56,11 @@ footer {
   bottom: 0;
   width: 100%;
   grid-area: footer; }
-  footer #footer {
-    justify-content: flex-end; }
   footer a {
     padding: 5px; }
+
+#footer {
+  justify-content: flex-end; }
 
 #titulo {
   padding-bottom: 20px; }
@@ -71,15 +74,15 @@ footer {
     height: 50px; }
     header nav {
       font-size: 12px; }
-      header nav a img #logo {
+      header nav a #logo {
         width: 24px;
         height: 24px; }
   main {
     font-size: 12px; }
     main h1 {
       font-size: 20px; }
-      main h1 #titulo {
-        margin-top: 10%; }
+    main #titulo {
+      margin-top: 10%; }
   footer a {
     padding: 2px; }
     footer a img {
