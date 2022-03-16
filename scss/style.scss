@@ -36,6 +36,29 @@ div {
         font-size: 18px;
     }
 }
+
+/* Videos */
+
+.img-thumbnail {
+    background: none;
+    border: 0;
+}
+
+/* Noticias */
+
+p {
+    margin-bottom: 5%;
+    img {
+        width: 60%;
+        transition: width 1s;
+    }
+    img:hover {
+        width: 65%;
+    }
+}
+
+/* Contacto */
+
 @mixin background-color {
     background-color: #ecd4aa;
 }
@@ -83,6 +106,9 @@ form div {
             font-size: 10px;
             margin-top: 5px;
             padding: 10px;
+        }
+        .img-thumbnail {
+            max-width: 60%;
         }
     }
     footer {

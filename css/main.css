@@ -91,6 +91,21 @@ div {
     padding: 20px;
     font-size: 18px; }
 
+/* Videos */
+.img-thumbnail {
+  background: none;
+  border: 0; }
+
+/* Noticias */
+p {
+  margin-bottom: 5%; }
+  p img {
+    width: 60%;
+    transition: width 1s; }
+  p img:hover {
+    width: 65%; }
+
+/* Contacto */
 form {
   background-color: #ecd4aa;
   border-radius: 16px;
@@ -125,6 +140,8 @@ form div {
       font-size: 10px;
       margin-top: 5px;
       padding: 10px; }
+    main .img-thumbnail {
+      max-width: 60%; }
   footer a {
     padding: 2px; }
     footer a img {
