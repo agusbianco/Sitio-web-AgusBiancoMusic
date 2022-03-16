@@ -1,12 +1,53 @@
 @import "_base";
 @import "_layout";
 
+/* Index */
+
 #titulo {
     padding-bottom: 20px;
 }
 #foto {
     width: 75%;
     height: auto;
+}
+
+/* Perfil */
+
+h3 {
+    text-align: center;
+    margin-top: 0%;
+    padding-bottom: 2%;
+    font-size: 25px;
+}
+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .perfil {
+        width: 432px;
+        height: 539px;
+        border-radius: 16px;
+    }
+    .bio {
+        @extend .perfil;
+        background-color: #F0DDBC;
+        margin: 0%;
+        padding: 20px;
+        font-size: 18px;
+    }
+}
+@mixin background-color {
+    background-color: #ecd4aa;
+}
+form {
+    @include background-color;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 20px;
+}
+form div {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 425px) {
@@ -30,6 +71,19 @@
         #titulo {
             margin-top: 10%;
         } 
+        h3 {
+            font-size: 15px;
+        }
+        .perfil {
+            width: 60%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .bio {
+            font-size: 10px;
+            margin-top: 5px;
+            padding: 10px;
+        }
     }
     footer {
         a {
