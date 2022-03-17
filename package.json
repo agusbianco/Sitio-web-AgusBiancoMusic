@@ -1,7 +1,7 @@
 {
   "name": "mi_repositorio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto sitio web artista",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

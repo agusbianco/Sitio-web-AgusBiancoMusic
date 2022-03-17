@@ -50,10 +50,6 @@ p {
     margin-bottom: 5%;
     img {
         width: 60%;
-        transition: width 1s;
-    }
-    img:hover {
-        width: 65%;
     }
 }
 
@@ -67,11 +63,13 @@ form {
     border-radius: 16px;
     display: inline-block;
     padding: 20px;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
 }
-form div {
-    display: flex;
-    flex-direction: column;
-}
+
+/* Media queries */
 
 @media screen and (max-width: 425px) {
     header {

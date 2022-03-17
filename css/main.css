@@ -100,10 +100,7 @@ div {
 p {
   margin-bottom: 5%; }
   p img {
-    width: 60%;
-    transition: width 1s; }
-  p img:hover {
-    width: 65%; }
+    width: 60%; }
 
 /* Contacto */
 form {
@@ -111,11 +108,11 @@ form {
   border-radius: 16px;
   display: inline-block;
   padding: 20px; }
+  form div {
+    display: flex;
+    flex-direction: column; }
 
-form div {
-  display: flex;
-  flex-direction: column; }
-
+/* Media queries */
 @media screen and (max-width: 425px) {
   header {
     height: 50px; }
