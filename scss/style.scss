@@ -55,11 +55,8 @@ p {
 
 /* Contacto */
 
-@mixin background-color {
-    background-color: #ecd4aa;
-}
 form {
-    @include background-color;
+    background-color: #ecd4aa;
     border-radius: 16px;
     display: inline-block;
     padding: 20px;
@@ -119,6 +116,3 @@ form {
         }
     }
 }
-
-
-
