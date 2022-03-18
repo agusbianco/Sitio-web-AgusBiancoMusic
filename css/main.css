@@ -25,6 +25,7 @@ header {
   height: 70px;
   grid-area: navbar; }
   header nav {
+    background-color: #f0ddbce5;
     text-transform: uppercase;
     font-size: 25px; }
     header nav .navbar-brand {
@@ -43,16 +44,19 @@ header {
 main {
   display: block;
   text-align: center;
-  grid-area: main; }
+  grid-area: main;
+  margin-top: 5%;
+  margin-bottom: 5%; }
   main h1 {
-    text-align: center;
+    margin-top: 2%;
+    margin-left: 6%;
+    text-align: left;
     font-size: 35px; }
   main .borde-redondo {
     border-radius: 16px; }
 
-.container {
-  margin-top: 5%;
-  margin-bottom: 5%; }
+.margen-top-0 {
+  margin-top: 0%; }
 
 footer {
   display: block;
@@ -60,7 +64,7 @@ footer {
   margin-bottom: 0;
   width: 100%;
   grid-area: footer;
-  background-color: #F0DDBC; }
+  background-color: #f0ddbce5; }
   footer p {
     display: inline-block;
     font-size: 25px;
@@ -101,10 +105,6 @@ section {
     font-size: 13px; }
 
 /* Videos */
-.img-thumbnail {
-  background: none;
-  border: 0; }
-
 /* Noticias */
 p {
   margin-bottom: 5%; }
@@ -118,7 +118,7 @@ p {
 form {
   width: 300px;
   height: 450px;
-  background-color: #ecd4aa;
+  background-color: #ecd4aac5;
   border-radius: 16px;
   display: inline-block;
   padding: 20px; }
