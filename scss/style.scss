@@ -10,16 +10,11 @@
 
 /* Perfil */
 
-h3 {
-    text-align: center;
-    margin-top: 0%;
-    padding-bottom: 2%;
-    font-size: 25px;
-}
-div {
+section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    text-align: justify;
     .perfil {
         width: 432px;
         height: 539px;
@@ -30,7 +25,9 @@ div {
         background-color: #F0DDBC;
         margin: 0%;
         padding: 20px;
-        font-size: 18px;
+    }
+    .datos {
+        font-size: 13px;
     }
 }
 
@@ -86,16 +83,12 @@ form {
         #titulo {
             margin-top: 10%;
         } 
-        h3 {
-            font-size: 15px;
-        }
         .perfil {
             width: 60%;
             height: auto;
             margin-bottom: 5px;
         }
         .bio {
-            font-size: 10px;
             margin-top: 5px;
             padding: 10px;
         }

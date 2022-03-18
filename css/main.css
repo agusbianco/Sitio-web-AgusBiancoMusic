@@ -43,7 +43,6 @@ header {
 main {
   display: block;
   text-align: center;
-  font-size: 25px;
   grid-area: main; }
   main h1 {
     text-align: center;
@@ -85,25 +84,21 @@ footer {
   height: auto; }
 
 /* Perfil */
-h3 {
-  text-align: center;
-  margin-top: 0%;
-  padding-bottom: 2%;
-  font-size: 25px; }
-
-div {
+section {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
-  div .perfil, div .bio {
+  justify-content: space-around;
+  text-align: justify; }
+  section .perfil, section .bio {
     width: 432px;
     height: 539px;
     border-radius: 16px; }
-  div .bio {
+  section .bio {
     background-color: #F0DDBC;
     margin: 0%;
-    padding: 20px;
-    font-size: 18px; }
+    padding: 20px; }
+  section .datos {
+    font-size: 13px; }
 
 /* Videos */
 .img-thumbnail {
@@ -141,14 +136,11 @@ form {
       font-size: 20px; }
     main #titulo {
       margin-top: 10%; }
-    main h3 {
-      font-size: 15px; }
-    main .perfil, main div .bio, div main .bio {
+    main .perfil, main section .bio, section main .bio {
       width: 60%;
       height: auto;
       margin-bottom: 5px; }
     main .bio {
-      font-size: 10px;
       margin-top: 5px;
       padding: 10px; }
     main .img-thumbnail {
