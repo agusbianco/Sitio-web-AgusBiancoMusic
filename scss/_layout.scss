@@ -82,13 +82,16 @@ footer {
     }
     a {
         display: inline-block;
-        img {
+        svg {
+            color: black;
+            width: 32px;
+            height: 32px;
             padding: 5px;
             transition: 5ms;
         }
-        img:hover {
-            width: 34px;
-            height: auto;
+        svg:hover {
+            width: 36px;
+            height: 36px;
         }
     }
 }

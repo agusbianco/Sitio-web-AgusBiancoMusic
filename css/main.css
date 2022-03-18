@@ -72,12 +72,15 @@ footer {
     margin-bottom: 0%; }
   footer a {
     display: inline-block; }
-    footer a img {
+    footer a svg {
+      color: black;
+      width: 32px;
+      height: 32px;
       padding: 5px;
       transition: 5ms; }
-    footer a img:hover {
-      width: 34px;
-      height: auto; }
+    footer a svg:hover {
+      width: 36px;
+      height: 36px; }
 
 #footer {
   justify-content: flex-end; }
