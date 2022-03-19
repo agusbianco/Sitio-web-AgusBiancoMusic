@@ -4,11 +4,41 @@
 /* Index */
 
 #foto {
-    top: 0%;
     width: 100%;
     height: auto;
-    margin-bottom: 2%;
+    padding-bottom: 10%;
 }
+.noticias {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+    div {
+        width: 100%;
+        h2 {
+            padding-bottom: 3%;
+            text-transform: uppercase;
+        }
+        a {
+
+            width: 120px;
+            height: auto;
+            border-radius: 20px;
+        }
+        p {
+            padding-bottom: 3%;
+            border-bottom-color: black;
+            border-bottom-style: solid;
+            border-bottom-width: 2px;
+        }
+        .margin-left {
+            margin-left: 30%;
+        }
+    }
+
+}
+
 
 /* Perfil */
 
@@ -25,7 +55,6 @@ section {
     .bio {
         @extend .perfil;
         background-color: #F0DDBC;
-        margin: 0%;
         padding: 20px;
     }
     .datos {
@@ -44,6 +73,9 @@ p {
     img {
         width: 60%;
     }
+    .borde-redondo {
+        border-radius: 16px;
+    }
 }
 
 /* Contacto */
@@ -58,6 +90,7 @@ form {
     border-radius: 16px;
     display: inline-block;
     padding: 20px;
+    margin-top: 2%;
     div {
         display: flex;
         flex-direction: column;
@@ -71,12 +104,10 @@ form {
         height: 40px;
         nav {
             font-size: 12px;
-            a {
-                #logo {
-                        width: 24px;
-                        height: 24px;
-                }
-            }    
+            #logo {
+                width: 24px;
+                height: 24px;
+            }  
         }
     }
     main {
@@ -136,6 +167,11 @@ form {
                 padding: 2px;
                 width: 16px;
                 height: 16px;
+            }
+            svg:hover {
+                padding: 0%;
+                width: 18px;
+                height: 18px;
             }
         }
     }
