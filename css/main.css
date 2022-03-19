@@ -22,10 +22,11 @@ header {
   display: block;
   top: 0;
   width: 100%;
-  height: 70px;
-  grid-area: navbar; }
+  height: 60px;
+  grid-area: navbar;
+  background-color: #f0ddbce5;
+  padding-bottom: 0%; }
   header nav {
-    background-color: #f0ddbce5;
     text-transform: uppercase;
     font-size: 25px; }
     header nav .navbar-brand {
@@ -34,7 +35,8 @@ header {
     header nav a {
       transition: 5s; }
     header nav a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: rgba(0, 0, 0, 0.664); }
     header nav .is-current {
       text-decoration: underline; }
   header .navbar {
@@ -54,8 +56,15 @@ main {
     font-size: 35px; }
   main .borde-redondo {
     border-radius: 16px; }
+  main svg {
+    margin-bottom: 5%;
+    margin-right: 5%;
+    color: black;
+    transition: 5ms; }
+  main svg:hover {
+    color: rgba(0, 0, 0, 0.664); }
 
-.margen-top-0 {
+.margin-top-0 {
   margin-top: 0%; }
 
 footer {
@@ -79,6 +88,7 @@ footer {
       padding: 5px;
       transition: 5ms; }
     footer a svg:hover {
+      padding: 0%;
       width: 36px;
       height: 36px; }
 
@@ -87,8 +97,10 @@ footer {
 
 /* Index */
 #foto {
-  width: 75%;
-  height: auto; }
+  top: 0%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2%; }
 
 /* Perfil */
 section {
@@ -132,29 +144,44 @@ form {
 /* Media queries */
 @media screen and (max-width: 425px) {
   header {
-    height: 50px; }
+    height: 40px; }
     header nav {
       font-size: 12px; }
       header nav a #logo {
         width: 24px;
         height: 24px; }
   main {
-    font-size: 12px; }
+    font-size: 10px; }
+    main #foto {
+      margin-top: 4%;
+      margin-bottom: 4%; }
     main h1 {
+      margin-top: 5%;
       font-size: 20px; }
-    main #titulo {
-      margin-top: 10%; }
-    main .perfil, main section .bio, section main .bio {
+    main section {
+      line-height: 1.2; }
+      main section h3 {
+        font-size: 15px; }
+      main section .perfil, main section .bio {
+        width: 60%;
+        height: auto;
+        margin-bottom: 5px; }
+      main section .bio {
+        margin-top: 5px;
+        padding: 10px; }
+      main section .datos {
+        font-size: 8px; }
+    main iframe {
       width: 60%;
-      height: auto;
-      margin-bottom: 5px; }
-    main .bio {
-      margin-top: 5px;
-      padding: 10px; }
-    main .img-thumbnail {
-      max-width: 60%; }
-  footer a {
-    padding: 2px; }
-    footer a img {
-      width: 16px;
-      height: 16px; } }
+      height: auto; }
+    main form {
+      width: 60%;
+      height: auto; }
+  #fondo {
+    background-image: none; }
+  footer p {
+    font-size: 12px; }
+  footer a svg {
+    padding: 2px;
+    width: 16px;
+    height: 16px; } }
