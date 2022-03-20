@@ -7,6 +7,7 @@
     width: 100%;
     height: auto;
     padding-bottom: 10%;
+    padding-top: 0%;
 }
 .noticias {
     display: flex;
@@ -21,7 +22,6 @@
             text-transform: uppercase;
         }
         a {
-
             width: 120px;
             height: auto;
             border-radius: 20px;
@@ -144,9 +144,12 @@ form {
             height: auto;
         }
         form {
-            margin-top: 5%;
+            margin-top: 10%;
             width: 60%;
             height: auto;
+            label {
+                text-align: left;
+            }
             .btn {
                 font-size: 10px;
             }
@@ -154,9 +157,28 @@ form {
                 font-size: 10px;
             }
         }
+        .noticias {
+            h2 {
+                font-size: 20px;
+                padding-bottom: 0%;
+            }
+            a {
+                width: 60px;
+                font-size: 8px;
+            }
+            p {
+                border-width: 1px;
+            }
+            .margin-left {
+                margin-left: 15%;
+            }
+        }
     }
     #fondo {
-        background-image: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     footer {
         p {
