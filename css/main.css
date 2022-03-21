@@ -15,7 +15,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-rows: 5% 80% 5%;
+  grid-template-rows: 3% 92% 5%;
   grid-template-areas: "navbar" "main" "footer"; }
 
 header {
@@ -50,7 +50,7 @@ main {
   margin-top: 5%;
   margin-bottom: 5%; }
   main h1 {
-    margin-top: 3%;
+    margin-top: 4%;
     margin-left: 8%;
     text-align: left;
     font-size: 35px;
@@ -97,27 +97,29 @@ footer {
   padding-bottom: 10%;
   padding-top: 0%; }
 
-.noticias {
+.flex {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   padding: 10%; }
-  .noticias div {
+  .flex div {
     width: 100%; }
-    .noticias div h2 {
+    .flex div h2 {
       padding-bottom: 3%;
       text-transform: uppercase; }
-    .noticias div a {
+    .flex div a {
       width: 120px;
       height: auto;
       border-radius: 20px; }
-    .noticias div p {
+    .flex div p {
       padding-bottom: 3%;
       border-bottom-color: black;
       border-bottom-style: solid;
-      border-bottom-width: 2px; }
-    .noticias div .margin-left {
+      border-bottom-width: 2px;
+      font-size: 18px;
+      text-align: justify; }
+    .flex div .margin-left {
       margin-left: 30%; }
 
 /* Perfil */
@@ -136,14 +138,50 @@ section {
   section .datos {
     font-size: 13px; }
 
-/* Videos */
 /* Noticias */
-p {
-  margin-bottom: 5%; }
-  p img {
-    width: 60%; }
-  p .borde-redondo {
-    border-radius: 16px; }
+section {
+  padding-bottom: 3%; }
+  section .noticias {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    padding-bottom: 3%;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px; }
+    section .noticias p {
+      font-size: 18px;
+      text-align: justify; }
+      section .noticias p a {
+        transition: 5ms; }
+      section .noticias p a:hover {
+        font-weight: bold;
+        color: black; }
+    section .noticias .padding-left {
+      padding-left: 10%; }
+    section .noticias .imagen-horizontal {
+      width: 305px;
+      height: 172px;
+      border-radius: 10px; }
+    section .noticias .imagen-vertical {
+      width: 204px;
+      height: 253px;
+      border-radius: 10px; }
+    section .noticias img {
+      transition: 5ms; }
+    section .noticias img:hover {
+      border-color: white;
+      border-style: solid;
+      border-width: 5px; }
+    section .noticias .width {
+      width: 50%;
+      padding-left: 2%; }
 
 /* Contacto */
 #fondo {
@@ -177,7 +215,7 @@ form {
       margin-top: 4%;
       margin-bottom: 4%; }
     main h1 {
-      margin-top: 5%;
+      margin-top: 10%;
       font-size: 20px; }
     main section {
       line-height: 1.2; }
@@ -186,17 +224,30 @@ form {
       main section .perfil, main section .bio {
         width: 60%;
         height: auto;
-        margin-bottom: 5px; }
+        margin-bottom: 10px;
+        margin-top: 20px; }
       main section .bio {
-        margin-top: 5px;
+        margin-top: 10px;
         padding: 10px; }
       main section .datos {
         font-size: 8px; }
     main iframe {
       width: 60%;
       height: auto; }
+    main #padding-responsive {
+      padding-top: 3%; }
+    main .noticias {
+      border-bottom-width: 1px; }
+      main .noticias p {
+        font-size: 10px; }
+      main .noticias .imagen-horizontal {
+        width: 101px;
+        height: 57px; }
+      main .noticias .imagen-vertical {
+        width: 68px;
+        height: 84px; }
     main form {
-      margin-top: 10%;
+      margin-top: 20%;
       width: 60%;
       height: auto; }
       main form label {
@@ -205,16 +256,17 @@ form {
         font-size: 10px; }
       main form .form-control {
         font-size: 10px; }
-    main .noticias h2 {
-      font-size: 20px;
+    main .flex h2 {
+      font-size: 19px;
       padding-bottom: 0%; }
-    main .noticias a {
+    main .flex a {
       width: 60px;
       font-size: 8px; }
-    main .noticias p {
-      border-width: 1px; }
-    main .noticias .margin-left {
-      margin-left: 15%; }
+    main .flex p {
+      border-width: 1px;
+      font-size: 10px; }
+    main .flex .margin-left {
+      margin-left: 10%; }
   #fondo {
     background-position: center center;
     background-repeat: no-repeat;

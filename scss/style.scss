@@ -9,7 +9,7 @@
     padding-bottom: 10%;
     padding-top: 0%;
 }
-.noticias {
+.flex {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -31,6 +31,8 @@
             border-bottom-color: black;
             border-bottom-style: solid;
             border-bottom-width: 2px;
+            font-size: 18px;
+            text-align: justify;
         }
         .margin-left {
             margin-left: 30%;
@@ -62,19 +64,60 @@ section {
     }
 }
 
-/* Videos */
-
-
-
 /* Noticias */
 
-p {
-    margin-bottom: 5%;
-    img {
-        width: 60%;
-    }
-    .borde-redondo {
-        border-radius: 16px;
+section {
+    padding-bottom: 3%;
+    .noticias {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+        padding-bottom: 3%;
+        border-bottom-color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        p {
+            font-size: 18px;
+            text-align: justify;
+            a {
+                transition: 5ms;
+            }
+            a:hover {
+                font-weight: bold;
+                color: black;
+            }
+        }
+        .padding-left {
+            padding-left: 10%;
+        }
+        .imagen-horizontal {
+            width: 305px;
+            height: 172px;
+            border-radius: 10px;
+        }
+        .imagen-vertical {
+            width: 204px;
+            height: 253px;
+            border-radius: 10px;
+        }
+        img {
+            transition: 5ms;
+        }
+        img:hover {
+            border-color: white;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .width {
+            width: 50%;
+            padding-left: 2%;
+        }
     }
 }
 
@@ -118,7 +161,7 @@ form {
             margin-bottom: 4%;
         }
         h1 {
-            margin-top: 5%;
+            margin-top: 10%;
             font-size: 20px;
         }
         section {
@@ -129,10 +172,11 @@ form {
             .perfil {
                 width: 60%;
                 height: auto;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
+                margin-top: 20px;
             }
             .bio {
-                margin-top: 5px;
+                margin-top: 10px;
                 padding: 10px;
             }
             .datos {
@@ -143,8 +187,25 @@ form {
             width: 60%;
             height: auto;
         }
+        #padding-responsive {
+            padding-top: 3%;
+        }
+        .noticias {
+            border-bottom-width: 1px;
+            p {
+                font-size: 10px;
+            }
+            .imagen-horizontal {
+                width: 101px;
+                height: 57px;
+            }
+            .imagen-vertical {
+                width: 68px;
+                height: 84px;
+            }
+        }
         form {
-            margin-top: 10%;
+            margin-top: 20%;
             width: 60%;
             height: auto;
             label {
@@ -157,9 +218,9 @@ form {
                 font-size: 10px;
             }
         }
-        .noticias {
+        .flex {
             h2 {
-                font-size: 20px;
+                font-size: 19px;
                 padding-bottom: 0%;
             }
             a {
@@ -168,9 +229,10 @@ form {
             }
             p {
                 border-width: 1px;
+                font-size: 10px;
             }
             .margin-left {
-                margin-left: 15%;
+                margin-left: 10%;
             }
         }
     }
