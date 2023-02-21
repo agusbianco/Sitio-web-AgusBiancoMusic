@@ -16,7 +16,9 @@ body {
 .grid {
   display: grid;
   grid-template-rows: 3% 92% 5%;
-  grid-template-areas: "navbar" "main" "footer"; }
+  grid-template-areas: "navbar"
+ "main"
+ "footer"; }
 
 header {
   display: block;
